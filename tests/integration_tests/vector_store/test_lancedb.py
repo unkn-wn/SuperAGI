@@ -84,7 +84,7 @@ def test_add_texts(store, client, data, results, table_name, request):
 
     tbl = client.open_table(table_name)
     assert len(tbl.to_pandas().columns) - 3 == meta_count
-    # Subtracting 3 because of the id, vector, and text columns. The rest
+    # Subtracting 3 because of the id, vector, text columns. The rest
     # should be metadata columns.
 
 
